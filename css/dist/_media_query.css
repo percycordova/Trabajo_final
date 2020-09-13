@@ -1,0 +1,8 @@
+@media (min-width: 768px) {
+  .cabecera .cabecera__logo h1 {
+    line-height: 120px;
+  }
+  .cabecera .cabecera__iconos p {
+    text-align: right;
+  }
+}

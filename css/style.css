@@ -1,0 +1,598 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+.tamaño_titulo {
+  font-size: calc(2em + 2vw);
+}
+
+.tamaño_subtitulo {
+  font-size: calc(1.8em + 1.2vw);
+}
+
+.tamaño_texto {
+  font-size: calc(1em + 1.8vw);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box !important;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.contenedor_img {
+  width: 100%;
+}
+
+.contenedor {
+  width: 97%;
+  margin: 0px auto;
+}
+
+.espacio {
+  border: 1px solid black;
+}
+
+/*------------------------INICIO DE MI CABECERA-----------------------*/
+.cabecera > div > div:first-child {
+  overflow: hidden;
+}
+.cabecera .cabecera__logo {
+  margin-top: 10px;
+  max-width: 150px !important;
+}
+.cabecera .cabecera__logo img {
+  animation-name: desplazamiento;
+  /*llamo a mi fey frame*/
+  animation-duration: 5s;
+  /*timpo que durar la animacion*/
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  /*si va sr infinita*/
+  animation-timing-function: linear;
+  /*todo el rato va a la misma velocidad*/
+}
+.cabecera h1 {
+  display: none;
+}
+.cabecera .cabecera__iconos p {
+  color: black;
+  margin-top: 5px;
+}
+
+@keyframes desplazamiento {
+  0% {
+    margin-left: 0%;
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  55% {
+    margin-left: 700px;
+    transform: scale(1.2);
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+  }
+  100% {
+    margin-left: 0px;
+    transform: scale(1.3);
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+  }
+}
+header [class*=icon-]:before {
+  position: relative;
+  border-radius: 999px;
+  color: green;
+  left: 0px;
+  top: 5px;
+  font-size: 30px;
+}
+
+header [class=icon-gps]:before {
+  color: darkorchid;
+}
+
+header .contactoInfo span {
+  margin-left: 7px;
+}
+
+/*--------------------------------FIN DE MI CABECERA-------------------------*/
+/*-------------------------------INICIO DE MI MENU DE NAVEGACION-------------*/
+.navegacion {
+  width: 100%;
+  position: relative;
+  z-index: 2000;
+  padding: 10px;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-menu {
+  display: block;
+  border: 1px solid white;
+  background: white;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 42px;
+  cursor: pointer;
+  font-size: 2.6rem;
+}
+
+.menu {
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-align: center;
+  height: 0px;
+  transition: height 250ms linear;
+  overflow: hidden;
+  font-size: 1.6rem;
+  background: rgba(0, 0, 0, 0.95);
+}
+.menu .menu__link {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+.menu .menu__link:hover {
+  background: #de423a;
+  transform: scale(1.2);
+}
+.menu .resaltar__menu {
+  background: #de423a;
+}
+
+.mostrar {
+  height: 271px;
+}
+
+.red-sociales {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 5px !important;
+}
+.red-sociales a {
+  text-decoration: none !important;
+}
+
+.red-sociales [class*=icon-] {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  width: 35px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  transition: all 500ms;
+  margin-left: 10px;
+}
+
+.red-sociales [class=icon-youtube]:hover {
+  background: red;
+  color: white;
+}
+
+.red-sociales [class=icon-facebook]:hover {
+  background: blue;
+  color: white;
+}
+
+.red-sociales [class=icon-twitter]:hover {
+  background: #5dbaeb;
+  color: white;
+}
+
+.red-sociales [class=icon-mail]:hover {
+  background: #006fbf;
+  color: white;
+}
+
+.red-sociales .red-link {
+  text-decoration: none;
+}
+
+/*-----------------------------------FIN DE MI MENU DE NAVEGACION---------------*/
+/*---------------------INICIO DE MI BANNER-------------------*/
+.banner {
+  margin-top: -60px;
+  position: relative;
+  overflow: hidden;
+}
+
+/*estilo para darle una sombra a nuestro banner*/
+.banner:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.78);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0px;
+}
+
+.banner-imagen {
+  width: 100%;
+  height: 500px;
+  /*me permite que no se distorcione mucho la imagen*/
+  object-fit: cover;
+  background-size: 100% 100%;
+}
+
+.banner-mensaje {
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  z-index: 1500;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-30%);
+  /*centra tu texto de una manera preciso*/
+  font-weight: bold;
+}
+
+.banner-mensaje p:nth-child(1) {
+  margin-bottom: 0px;
+}
+
+.banner-mensaje p:nth-child(2) {
+  width: 70%;
+  font-family: "pacifico", cursive;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-40%);
+}
+
+.banner-mensaje p:nth-child(3) {
+  padding-top: 120px;
+}
+
+/*--------------------------------FIN ESTILOS BANNER--------------------------*/
+/*-------------------------------INICIO DE ESTILOS BIENBENIDA-----------------*/
+.main {
+  width: 95%;
+  margin: 20px auto;
+}
+
+.main__bienvenida {
+  background: #de423a !important;
+  color: white !important;
+}
+
+.boton {
+  display: block;
+  text-align: center;
+  text-decoration: none !important;
+  width: 150px;
+  background: #fafafa;
+  padding: 15px;
+  margin: 20px auto;
+  border: 1px solid #008deb;
+  color: #008deb;
+  border-radius: 10px;
+  transition: all 0.25s;
+  z-index: 1;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.boton:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #17e4f3, #008deb);
+  transition: all 0.4s;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.boton:hover {
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.boton:hover::before {
+  height: 100%;
+}
+
+/*---------------------------FIN ESTILO DE BIENVENIDA-------------------------*/
+/*---------------------------INICIO DE MI SECCION DE PRECIOS Y PLATOS DEL MENU-------------*/
+.today-special h2 {
+  text-align: center;
+  font-family: "pacifico", cursive;
+  font-weight: 100;
+  font-size: 3.2em;
+  margin: 30px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.carta-menu .carta-menu__card {
+  width: 330px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.25s;
+  margin-bottom: 20px;
+}
+.carta-menu .carta-menu__card img {
+  margin: auto;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+.carta-menu .carta-menu__card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.carta-menu .today-title {
+  font-size: 2.4rem;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.carta-menu .today-price {
+  font-size: 3rem;
+  color: #de423a;
+  font-weight: bold;
+  font-family: "pacifico", cursive;
+  backdrop-filter: red;
+}
+
+/*-----------------------------------------FIN DE MI SECCION DE PRECIOS DEL MENU--------------------------------*/
+.main-footer {
+  background: #222;
+  color: white;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.main-footer p {
+  padding: 10px;
+}
+
+.horario_atencion {
+  margin: 0px auto;
+  display: flex;
+  width: 99%;
+  justify-content: space-between;
+}
+
+.main-footer h2 {
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+  text-align: left;
+}
+
+.main-footer div > div {
+  margin-top: 20px;
+}
+
+.main-footer div:last-child {
+  margin-top: 20px;
+}
+
+iframe {
+  margin-top: 3px;
+  width: 98%;
+}
+
+.copy {
+  text-align: center;
+  margin: auto;
+}
+
+#social {
+  overflow: hidden;
+}
+
+#social a,
+#social p {
+  display: block;
+  color: #333;
+  height: 40px;
+}
+
+#social p {
+  height: 42px;
+}
+
+#social .overlay {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0px 0px 1px #ccc;
+  background: #f4f7fe;
+  text-shadow: 0px 0px 4px #ccc;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 500ms linear;
+}
+
+#social div:hover .overlay {
+  opacity: 1;
+  transform: translateX(3%);
+}
+
+.facebook,
+.twitter,
+.youtube {
+  display: flex;
+  justify-items: center;
+  height: 44px;
+}
+
+.main-footer [class*=icon-] {
+  color: white;
+  text-decoration: none;
+  width: 40px;
+}
+
+.main-footer [class*=icon-]:before {
+  position: relative;
+  top: 1px;
+  right: 1px;
+  font-size: 40px;
+}
+
+.main-footer [class*=icon-facebook]:before {
+  color: blue;
+  background: white;
+}
+
+.main-footer [class*=icon-twitter]:before {
+  color: #5dbaeb;
+  background: white;
+}
+
+.main-footer [class*=icon-youtube]:before {
+  color: red;
+  background: white;
+}
+
+@media (min-width: 576px) {
+  .tamaño_titulo {
+    font-size: calc(2em + 2vw);
+  }
+
+  .tamaño_subtitulo {
+    font-size: calc(1.8em + 1.2vw);
+  }
+
+  .tamaño_texto {
+    font-size: calc(0.8em + 1.3vw);
+  }
+}
+@media (min-width: 768px) {
+  .tamaño_titulo {
+    font-size: calc(2em + 2vw);
+  }
+
+  .tamaño_subtitulo {
+    font-size: calc(1.8em + 1.2vw);
+  }
+
+  .tamaño_texto {
+    font-size: calc(0.8em + 0.8vw);
+  }
+
+  .cabecera__iconos p {
+    text-align: right;
+  }
+  .cabecera__iconos p:first-child {
+    margin-top: 35px;
+  }
+
+  .cabecera .cabecera__logo {
+    margin-top: 20px !important;
+    max-width: 200px !important;
+  }
+
+  .banner {
+    margin-top: -95px;
+  }
+  .banner .banner-imagen {
+    height: 800px;
+  }
+
+  .fan-page {
+    line-height: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .fan-page {
+    line-height: 70px;
+  }
+
+  .cabecera {
+    position: relative;
+    z-index: 2000;
+  }
+  .cabecera .cabecera__logo {
+    margin: 0px;
+    margin-left: -5px;
+  }
+  .cabecera .cabecera__iconos {
+    margin-top: -30px;
+  }
+  .cabecera .cabecera__iconos p {
+    color: white;
+  }
+  .cabecera h1 {
+    display: block;
+    text-align: right;
+    line-height: 130px;
+    color: white;
+  }
+
+  .navegacion {
+    margin: 0px;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: space-around;
+    top: -75px;
+  }
+  .navegacion .icon-menu {
+    display: none;
+  }
+  .navegacion .menu {
+    display: flex;
+    height: auto;
+    width: 55%;
+    position: static;
+  }
+  .navegacion .menu .menu__link {
+    padding: 18px;
+    font-size: 1.8rem;
+  }
+  .navegacion .red-sociales {
+    width: 40%;
+  }
+  .navegacion .red-sociales :hover {
+    transform: scale(1.2);
+  }
+
+  .banner {
+    margin-top: -286px;
+  }
+}
+.row {
+  margin-right: -10px !important;
+  margin-left: -10px !important;
+}
+
+/*# sourceMappingURL=style.css.map */

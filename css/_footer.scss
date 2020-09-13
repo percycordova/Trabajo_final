@@ -1,0 +1,110 @@
+.main-footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.main-footer p {
+    padding: 10px;
+}
+
+.horario_atencion {
+    margin: 0px auto;
+    display: flex;
+    width: 99%;
+    justify-content: space-between;
+}
+
+.main-footer h2 {
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.main-footer div > div {
+    margin-top: 20px;
+}
+.main-footer div:last-child {
+    margin-top: 20px;
+}
+iframe {
+    margin-top: 3px;
+    width: 98%;
+   
+}
+.copy {
+    text-align: center;
+    margin: auto;
+}
+#social {
+    overflow: hidden;
+
+}
+#social a,
+#social p {
+    display: block;
+    color: #333;
+
+    height: 40px;
+}
+#social p {
+    height: 42px;
+}
+#social .overlay {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #ccc;
+    background: #f4f7fe;
+    text-shadow: 0px 0px 4px #ccc;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 500ms linear;
+}
+
+#social div:hover .overlay {
+    opacity: 1;
+    transform: translateX(3%);
+}
+
+.facebook,
+.twitter,
+.youtube {
+    display: flex;
+    justify-items: center;
+    height: 44px;
+}
+
+.main-footer [class*="icon-"] {
+    color: white;
+    text-decoration: none;
+    width: 40px;
+}
+
+.main-footer [class*="icon-"]:before {
+    position: relative;
+    top: 1px;
+    right: 1px;
+    font-size: 40px;
+    
+}
+
+.main-footer [class*="icon-facebook"]:before {
+    color: blue;
+    background: white;
+}
+
+.main-footer [class*="icon-twitter"]:before {
+    color: #5dbaeb;
+    background: white;
+}
+
+.main-footer [class*="icon-youtube"]:before {
+    color: red;
+    background: white;
+}

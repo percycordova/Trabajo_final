@@ -1,0 +1,135 @@
+@media(min-width:576px) {
+    $titulo: calc(2em + 2vw);
+    $subtitulo: calc(1.8em + 1.2vw);
+    $texto: calc(0.8em + 1.3vw);
+
+    .tamaño_titulo {
+        font-size: $titulo
+    }
+
+    .tamaño_subtitulo {
+        font-size: $subtitulo
+    }
+
+    .tamaño_texto {
+        font-size: $texto
+    }
+}
+
+@media (min-width: 768px) {
+    $titulo: calc(2em + 2vw);
+    $subtitulo: calc(1.8em + 1.2vw);
+    $texto: calc(0.8em + 0.8vw);
+
+    .tamaño_titulo {
+        font-size: $titulo
+    }
+
+    .tamaño_subtitulo {
+        font-size: $subtitulo
+    }
+
+    .tamaño_texto {
+        font-size: $texto
+    }
+
+    .cabecera__iconos {
+        p {
+            text-align: right;
+         
+        }
+
+        p:first-child {
+            margin-top: 35px;
+        }
+    }
+
+    .cabecera {
+        .cabecera__logo {
+            margin-top: 20px !important;
+            max-width: 200px !important;
+        }
+
+    }
+
+    .banner {
+        margin-top: -95px;
+
+        .banner-imagen {
+            height: 800px;
+        }
+    }
+
+    .fan-page {
+        line-height: 40px;
+    }
+
+}
+
+@media(min-width:992px) {
+    .fan-page {
+        line-height: 70px;
+    }
+
+    .cabecera {
+        position: relative;
+        z-index: 2000;
+
+        .cabecera__logo {
+            margin: 0px;
+            margin-left: -5px;
+
+        }
+
+        .cabecera__iconos {
+            margin-top: -30px;
+            p {
+                color: white;
+            }
+        }
+
+        h1 {
+            display: block;
+            text-align: right;
+            line-height: 130px;
+            color: white;
+        }
+
+    }
+
+    .navegacion {
+        margin: 0px;
+        padding: 0px;
+        background: rgba(0, 0, 0, 0.95);
+        justify-content: space-around;
+        top: -75px;
+        .icon-menu {
+            display: none;
+        }
+        .menu {
+            display: flex;
+            height: auto;
+            width: 55%;
+            position: static;
+
+            .menu__link {
+                padding: 18px;
+                font-size: 1.8rem;
+            }
+        }
+
+        .red-sociales {
+            width: 40%;
+
+            :hover {
+                transform: scale(1.2);
+            }
+        }
+
+    }
+
+    .banner {
+        margin-top: -286px;
+    }
+
+}
