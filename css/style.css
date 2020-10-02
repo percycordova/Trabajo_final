@@ -3,6 +3,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  box-sizing: border-box !important;
+}
+
 .tamaño_titulo {
   font-size: calc(2em + 2vw);
 }
@@ -336,7 +340,7 @@ header .contactoInfo span {
 }
 
 .carta-menu .carta-menu__card {
-  width: 330px;
+  width: 105%;
   height: 450px;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -347,7 +351,7 @@ header .contactoInfo span {
 }
 .carta-menu .carta-menu__card img {
   margin: auto;
-  max-width: 350px;
+  max-width: 100%;
   height: 300px;
   object-fit: cover;
 }

@@ -7,6 +7,9 @@ html {
     font-size: $conversion_rem;
 
 }
+body{
+    box-sizing: border-box !important;
+}
 
 .tamaño_titulo {
     font-size: $titulo
@@ -169,7 +172,7 @@ img {
 }
 .carta-menu {
     .carta-menu__card {
-        width: 330px;
+        width: 105%;
         height: 450px;
         border-radius: 8px;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -177,10 +180,11 @@ img {
         text-align: center;
         transition: all 0.25s;
         margin-bottom: 20px;
+    
 
         img {
             margin: auto;
-            max-width: 350px;
+            max-width: 100%;
             height: 300px;
             object-fit: cover;
         }
