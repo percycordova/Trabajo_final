@@ -2,12 +2,11 @@ $conversion_rem:62.5%;
 $titulo:calc(2em + 2vw);
 $subtitulo:calc(1.8em + 1.2vw);
 $texto:calc(1em + 1.8vw);
-
 html {
     font-size: $conversion_rem;
-
 }
-body{
+
+body {
     box-sizing: border-box !important;
 }
 
@@ -36,24 +35,26 @@ img {
 
 .contenedor_img {
     width: 100%;
-
 }
 
 .contenedor {
-    width: 97%;
+    width: 100%;
     margin: 0px auto;
 }
 
 @import 'cabecera'; //INICIO DE ESTILOS DE MI CABECERA Y MENÚ
 
 /*---------------------INICIO DE MI BANNER-------------------*/
+
 .banner {
     margin-top: -60px;
     position: relative;
     overflow: hidden;
 }
 
+
 /*estilo para darle una sombra a nuestro banner*/
+
 .banner:before {
     content: "";
     background: rgba(0, 0, 0, 0.78);
@@ -91,7 +92,6 @@ img {
 
 .banner-mensaje p:nth-child(2) {
     width: 70%;
-    font-family: "pacifico", cursive;
     letter-spacing: 1px;
     position: absolute;
     top: 40%;
@@ -103,18 +103,22 @@ img {
     padding-top: 120px;
 }
 
+
 /*--------------------------------FIN ESTILOS BANNER--------------------------*/
 
 
 /*-------------------------------INICIO DE ESTILOS BIENBENIDA-----------------*/
+
 .main {
     width: 95%;
     margin: 20px auto;
 }
+
 .main__bienvenida {
     background: #de423a !important;
     color: white !important;
 }
+
 .boton {
     display: block;
     text-align: center;
@@ -130,7 +134,6 @@ img {
     z-index: 1;
     position: relative;
     text-transform: uppercase;
-
 }
 
 .boton:before {
@@ -154,11 +157,14 @@ img {
 .boton:hover::before {
     height: 100%;
 }
+
+
 /*---------------------------FIN ESTILO DE BIENVENIDA-------------------------*/
 
+
 /*---------------------------INICIO DE MI SECCION DE PRECIOS Y PLATOS DEL MENU-------------*/
-.today-special{
-  
+
+.today-special {
     h2 {
         text-align: center;
         font-family: "pacifico", cursive;
@@ -170,6 +176,7 @@ img {
         border-bottom: 1px solid gray;
     }
 }
+
 .carta-menu {
     .carta-menu__card {
         width: 105%;
@@ -180,8 +187,6 @@ img {
         text-align: center;
         transition: all 0.25s;
         margin-bottom: 20px;
-    
-
         img {
             margin: auto;
             max-width: 100%;
@@ -189,7 +194,6 @@ img {
             object-fit: cover;
         }
     }
-
     .carta-menu__card:hover {
         transform: translateY(-15px);
         box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
@@ -199,7 +203,6 @@ img {
         padding-top: 10px;
         padding-bottom: 20px;
     }
-
     .today-price {
         font-size: 3rem;
         color: #de423a;
@@ -208,12 +211,12 @@ img {
         backdrop-filter: red;
     }
 }
+
+
 /*-----------------------------------------FIN DE MI SECCION DE PRECIOS DEL MENU--------------------------------*/
+
 @import 'footer'; //estilo de mi footer
-
-
-@import 'media_query' ;
-
+@import 'media_query';
 .row {
     margin-right: -10px !important;
     margin-left: -10px !important

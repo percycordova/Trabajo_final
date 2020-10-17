@@ -6,14 +6,14 @@
     @include border();
 }
 
+
 /*------------------------INICIO DE MI CABECERA-----------------------*/
+
 .cabecera {
     >div>div:first-child {
         overflow: hidden;
     }
-
     .cabecera__logo {
-
         margin-top: 10px;
         max-width: 150px !important;
         img {
@@ -22,37 +22,32 @@
             animation-duration: 5s;
             /*timpo que durar la animacion*/
             animation-delay: 1s;
-
             animation-iteration-count: 1;
             /*si va sr infinita*/
             animation-timing-function: linear;
             /*todo el rato va a la misma velocidad*/
         }
-        
     }
-    h1{
-        display: none ;
+    h1 {
+        display: none;
     }
-
     .cabecera__iconos {
         p {
             color: black;
             margin-top: 5px;
-
+            text-align: right;
+            margin-right: 15px;
         }
     }
 }
 
 @keyframes desplazamiento {
-
     0% {
         margin-left: 0%;
     }
-
     25% {
         transform: scale(1.1);
     }
-
     55% {
         margin-left: 700px;
         transform: scale(1.2);
@@ -60,9 +55,7 @@
         -webkit-transform-style: preserve-3d;
         transform: rotateY(180deg);
         transform-style: preserve-3d;
-       
     }
- 
     100% {
         margin-left: 0px;
         transform: scale(1.3);
@@ -70,7 +63,6 @@
         -webkit-transform-style: preserve-3d;
         transform: rotateY(180deg);
         transform-style: preserve-3d;
-
     }
 }
 
@@ -84,16 +76,16 @@ header [class*="icon-"]:before {
 }
 
 header [class="icon-gps"]:before {
-
     color: darkorchid;
-
 }
 
 header .contactoInfo span {
     margin-left: 7px;
 }
 
+
 /*--------------------------------FIN DE MI CABECERA-------------------------*/
+
 
 /*-------------------------------INICIO DE MI MENU DE NAVEGACION-------------*/
 
@@ -105,7 +97,6 @@ header .contactoInfo span {
     top: 20px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .icon-menu {
@@ -135,19 +126,15 @@ header .contactoInfo span {
     overflow: hidden;
     font-size: 1.6rem;
     background: rgba(0, 0, 0, 0.95);
-
     .menu__link {
         display: block;
         padding: 15px;
         color: white;
         text-decoration: none;
     }
-
     .menu__link:hover {
         background: #de423a;
-        transform: scale(1.2);
     }
-
     .resaltar__menu {
         background: #de423a;
     }
@@ -162,7 +149,6 @@ header .contactoInfo span {
     justify-content: flex-end;
     align-items: center;
     margin-left: 5px !important;
-
     a {
         text-decoration: none !important;
     }
@@ -180,7 +166,6 @@ header .contactoInfo span {
     border-radius: 50%;
     transition: all 500ms;
     margin-left: 10px;
-
 }
 
 .red-sociales [class="icon-youtube"]:hover {
@@ -206,5 +191,6 @@ header .contactoInfo span {
 .red-sociales .red-link {
     text-decoration: none;
 }
+
 
 /*-----------------------------------FIN DE MI MENU DE NAVEGACION---------------*/

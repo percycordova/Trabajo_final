@@ -2,205 +2,169 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pagina de comida rapida">
-  <meta name="keywords" content="hamburguesas, comida rapida, parrillas, comida rapida en piura">
-  <meta name="autor" content="Percy Cordova">
-  <meta name="copyright" content="Chescos Burguer">
-  <meta http-equiv="cavhe-control" content="no-cache">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="boostrap/css/bootstrap.css">
-  <link rel="stylesheet" href="css/iconos.css">
-  <title>chescosburger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina de comida rapida">
+    <meta name="keywords" content="hamburguesas, comida rapida, parrillas, comida rapida en piura">
+    <meta name="autor" content="Percy Cordova">
+    <meta name="copyright" content="Chescos Burguer">
+    <meta http-equiv="cavhe-control" content="no-cache">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="boostrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/iconos.css">
+    <title>chescosburger</title>
 
 </head>
 
 <body>
-  <div class="contenedor">
-    <!---------------------------------INICIO DE LA CABECERA---------------------------------->
-    <header class="cabecera">
-      <div class="row">
-        <div class="col-12 col-md-7 col-lg-9">
-          <div class="row">
-            <div class="cabecera__logo col-11 col-lg-4">
-              <a href="index.html">
-                <img src="img/CHESCOS BURGUER(1).png" alt="" title="CHESCOS BURGUER">
-              </a>
-            </div>
-            <h1 class="col-1 col-lg-8 tamaño_titulo">CHESCOS BURGUER</h1>
-          </div>
+    <div class="modal1" id="modal1">
+        <div class="modal1-content">
+            <img src="" alt="" class="modal1-img" id="modal1-img">
         </div>
-        <div class="cabecera__iconos col-12 col-md-5 col-lg-3">
-          <p class="tamaño_texto"><span class="icon-phone"> </span>+51 955 811 462</p>
-          <p class="tamaño_texto"><span class="icon-gps"></span>Av. Chulucanas s/n 20001 Piura</p>
-        </div>
-      </div>
-    </header>
-    <!--------------------------------------FIN DE LA CABECERA-------------------------------->
-
-    <!--------------------------------INICIO DE MI MENU---------------------------------------->
-    <nav class="navegacion">
-      <span class="icon-menu " id="btnmenu"></span>
-      <ul class="menu" id="menu">
-        <li class="menu__item"><a href="index.html" class="menu__link ">Inicio</a></li>
-        <li class="menu__item"><a href="promociones.html" class="menu__link">Promociones</a></li>
-        <li class="menu__item"><a href="galeria.html" class="menu__link resaltar__menu ">Galeria</a></li>
-        <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
-        <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
-      </ul>
-      <div class="red-sociales">
-        <a href="https://www.facebook.com/chescosburger" target="_black" class="red__link">
-          <span class="icon-facebook"></span> </a>
-        <a href="" class="red__link"><span class="icon-youtube"></span> </a>
-        <a href="" class="red__link"><span class="icon-twitter"></span> </a>
-        <a href="" class="red__link" target="_black"><span class="icon-mail"></span> </a>
-      </div>
-    </nav>
-    <!--------------------------------FIN DE MI MENU------------------------------------------->
-
-    <!--------------------------------INICIO DE MI BANNER-------------------------------------->
-    <section class="banner">
-      <img src="img/banner3.jpg" alt="" class="banner-imagen">
-      <div class="banner-mensaje">
-        <p class="tamaño_subtitulo">Tú mejor opcion en comida rápida</p>
-        <p class="tamaño_titulo">CHESCOS BURGUER</p>
-        <p class="tamaño_subtitulo">Especialistas en burger, pollo broster y más ...</p>
-      </div>
-    </section>
-    <!--------------------------------FIN DE MI BANNER----------------------------------------->
-
-    <!--------------------------------INICIO DE MI CONTENIDO PRINCIPAL------------------------->
-
-    <main class="main">
-      <!------------inicio de mi seccion de bienvenida---------->
-      <section class="main__bienvenida">
-        <h2 class="main__title text-center tamaño_subtitulo p-4">Bienvenido a Chescos Burger</h2>
-        <p class="main__txt  tamaño_texto p-4">
-          En el distrito de veintiseis de octubre existe un lugar donde la pasión y creatividad se reflejan en
-          nuestras mejores obras culinarias, las que disfrutarás a la perfección en amplios ambientes creados
-          especialmente para ti y tu familia, ideal para almuerzos de negocios, o una noche espectacular para
-          disfrutar con tus amigos, todo con la calidez y cordialidad de la atención que usted se merece.
-        </p>
-        <p class="main__txt text-center  tamaño_texto pb-5">
-          TE ESPERAMOS.
-        </p>
-      </section>
-      <div class="row mt-5">
-
-        <div class="col-12 col-md-6">
-          <div class="">
-            <img src="img/food.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-12 col-md-6 ">
-          <h3 class="tamaño_subtitulo text-center mt-4">Expertos en Gastronomia</h3>
-          <p class="tamaño_texto p-4 fan-page ">
-            En Chescos, queremos consentir a todos nuestros clientes, visita nuestro Fan Page
-            https://www.facebook.com y entérate de la mejor gastronomía que tenemos
-            para ti.
-          </p>
-          <a href="https://www.facebook.com/chescosburger" target="_black"
-            class="boton btn-contact tamaño_texto text-center">Siguenos</a>
-        </div>
-      </div>
-      <!-------------fin de mi seccion de bienvenida------------>
-      <section class="today-special">
-        <h2 class="tamaño_subtitulo text-center p-5"> Especial de hoy</h2>
-        <div class="carta-menu">
-          <div class="row">
-            <div class="carta-menu__card col-12 col-sm-6 col-lg-3">
-              <img src="img/plate1.jpg" alt="" class="today-img">
-              <div class="today-title">Ensalada Cesar</div>
-              <div class="today-price">S/. 25.00</div>
+        <div class="modal1-boton" id="modal1-boton">X</div>
+    </div>
+    <div class="contenedor">
+        <!---------------------------------INICIO DE LA CABECERA---------------------------------->
+        <header class="cabecera">
+            <div class="row">
+                <div class="col-5 col-md-7 col-lg-9">
+                    <div class="row">
+                        <div class="cabecera__logo col-11 col-lg-4">
+                            <a href="index.html">
+                                <img src="img/CHESCOS BURGUER(1).png" alt="" title="CHESCOS BURGUER">
+                            </a>
+                        </div>
+                        <h1 class="col-0 col-lg-8 tamaño_titulo">CHESCOS BURGUER</h1>
+                    </div>
+                </div>
+                <div class="cabecera__iconos col-7 col-md-5 col-lg-3">
+                    <p class="tamaño_texto"><span class="icon-phone"> </span>+51 955 811 462</p>
+                    <p class="tamaño_texto"><span class="icon-gps"></span>Av. Chulucanas s/n 20001 Piura</p>
+                </div>
             </div>
-            <div class="carta-menu__card col-12 col-sm-6 col-lg-3">
-              <img src="img/plate2.jpg" alt="" class="today-img">
-              <div class="today-title">Hamburguesa Royal</div>
-              <div class="today-price">S/. 25.00</div>
-            </div>
+        </header>
+        <!--------------------------------------FIN DE LA CABECERA-------------------------------->
 
-            <div class="carta-menu__card col-12 col-sm-6 col-lg-3">
-              <img src="img/plate3.jpg" alt="" class="today-img">
-              <div class="today-title">Torta Chocolate</div>
-              <div class="today-price">S/. 25.00</div>
+        <!--------------------------------INICIO DE MI MENU---------------------------------------->
+        <nav class="navegacion">
+            <span class="icon-menu " id="btnmenu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="index.html" class=" menu__link ">Inicio</a></li>
+                <li class="menu__item"><a href="promociones.html" class="menu__link">Promociones</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link resaltar__menu">Galeria</a></li>
+                <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+            </ul>
+            <div class="red-sociales">
+                <a href="https://www.facebook.com/chescosburger" target="_black" class="red__link">
+                    <span class="icon-facebook"></span> </a>
+                <a href="" class="red__link"><span class="icon-youtube"></span> </a>
+                <a href="" class="red__link"><span class="icon-twitter"></span> </a>
+                <a href="" class="red__link" target="_black"><span class="icon-mail"></span> </a>
             </div>
+        </nav>
+        <!--------------------------------FIN DE MI MENU------------------------------------------->
 
-            <div class="carta-menu__card col-12 col-sm-6 col-lg-3">
-              <img src="img/plate4.jpg" alt="" class="today-img">
-              <div class="today-title">Tallarines Rojos</div>
-              <div class="today-price">S/. 25.00</div>
-            </div>
+        <!--------------------------------INICIO DE MI BANNER-------------------------------------->
+        <section class="banner">
+            <img src="img/food3.jpg" alt="" class="banner-imagen">
+            <div class="banner-mensaje">
 
-          </div>
-        </div>
+                <p class="tamaño_titulo">La mejor y exquisita comida la encuentras aqui</p>
 
-      </section>
-    </main>
-    <!------------------------fin de mi contenido principal------------------>
+            </div>
+        </section>
+        <!--------------------------------FIN DE MI BANNER----------------------------------------->
 
-    <!-------------------------INICIO DE MI FOOTER--------------------------->
+        <!--------------------------------INICIO DE MI GALERIA------------------------->
+
+        <main class="main">
+            <div class="group galery">
+                <h2 class="tamaño_subtitulo text-center p-5"> Nuestra Galeria</h2>
+                <div class="container-galeria container-flex">
+                    <div class="column column-50-25">
+                        <img src="img/galeria/galery1.jpg" alt="" class=" galery-img-big galery-img">
+                        <img src="img/galeria/galery2.jpg" alt="" class="galery-img-small galery-img">
+                    </div>
+                    <div class="column column-50-25">
+                        <img src="img/galeria/galery4.jpg" alt="" class="galery-img-small galery-img">
+                        <img src="img/galeria/galery3.jpg" alt="" class="galery-img-big galery-img">
+                    </div>
+                    <div class="column column-50-25">
+                        <img src="img/galeria/galery5.jpg" alt="" class="galery-img-big galery-img">
+                        <img src="img/galeria/galery6.jpg" alt="" class="galery-img-small galery-img">
+                    </div>
+                    <div class="column column-50-25">
+                        <img src="img/galeria/galery7.jpg" alt="" class="galery-img-small galery-img">
+                        <img src="img/galeria/galery8.jpg" alt="" class="galery-img-big galery-img">
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <!---------------------------------FIN DE MI GALERIA----------------------->
+
+        <!-------------------------INICIO DE MI FOOTER--------------------------->
 
 
-    <footer class="main-footer">
-      <div class="row">
-        <div class="col-12 col-sm-6 col-lg-4">
-          <h2 class="column-title">HORARIO DE ATENCION</h2>
-          <div class="horario_atencion">
-            <div class="dias">
-              <p>Lunes a viernes</p>
-              <p>Lunes a viernes</p>
-              <p>Sábados y domingos</p>
-            </div>
-            <div class="horas">
-              <p>7:00 am-2:00 pm</p>
-              <p>4:00 pm-10:00 pm</p>
-              <p>7:00 am-4:00 pm</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <h2 class="column-title">Sigue nuestras redes</h2>
-          <div id="social">
-            <div class="facebook">
-              <a href="" class="icon-facebook"></a>
-              <p class="overlay"> Síguenos en Facebook</p>
-            </div>
-            <div class="twitter">
-              <a href="" class="icon-twitter"></a>
-              <p class="overlay">Síguenos en Facebook</p>
-            </div>
-            <div class="youtube">
-              <a href="" class="icon-youtube"></a>
-              <p class="overlay">Visita Nuestro Canal</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-lg-4">
-          <h2 class="column-title">UBÍCANOS</h2>
-          <p>(Frente a la universidad Cesar Vallejos)</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1986.7770046467217!2d-80.66143814663147!3d-5.175192968382924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1ac3fc018993%3A0x7720c3e40f152f2f!2sPiura%2020009!5e0!3m2!1ses!2spe!4v1597063808775!5m2!1ses!2spe"
-            width="400" height="300" frameborder="0" style="border:2;" allowfullscreen="" aria-hidden="false"
-            tabindex="0">
+        <footer class="main-footer">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <h2 class="column-title">HORARIO DE ATENCION</h2>
+                    <div class="horario_atencion">
+                        <div class="dias">
+                            <p>Lunes a viernes</p>
+                            <p>Lunes a viernes</p>
+                            <p>Sábados y domingos</p>
+                        </div>
+                        <div class="horas">
+                            <p>7:00 am-2:00 pm</p>
+                            <p>4:00 pm-10:00 pm</p>
+                            <p>7:00 am-4:00 pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <h2 class="column-title">Sigue nuestras redes</h2>
+                    <div id="social">
+                        <div class="facebook">
+                            <a href="" class="icon-facebook"></a>
+                            <p class="overlay"> Síguenos en Facebook</p>
+                        </div>
+                        <div class="twitter">
+                            <a href="" class="icon-twitter"></a>
+                            <p class="overlay">Síguenos en Facebook</p>
+                        </div>
+                        <div class="youtube">
+                            <a href="" class="icon-youtube"></a>
+                            <p class="overlay">Visita Nuestro Canal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4">
+                    <h2 class="column-title">UBÍCANOS</h2>
+                    <p>(Frente a la universidad Cesar Vallejos)</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1986.7770046467217!2d-80.66143814663147!3d-5.175192968382924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1ac3fc018993%3A0x7720c3e40f152f2f!2sPiura%2020009!5e0!3m2!1ses!2spe!4v1597063808775!5m2!1ses!2spe"
+                        width="400" height="300" frameborder="0" style="border:2;" allowfullscreen="" aria-hidden="false" tabindex="0">
           </iframe>
-        </div>
-      </div>
-      <div class="copy">
-        <p> &COPY; 2020 CHESCOS BURGER.</p> <span> Todos los Derechos Reservados</span>
+                </div>
+            </div>
+            <div class="copy">
+                <p> &COPY; 2020 CHESCOS BURGER.</p> <span> Todos los Derechos Reservados</span>
 
-      </div>
-    </footer>
+            </div>
+        </footer>
 
-    <!-------------------------FIN DE MI FOOTER------------------------------>
+        <!-------------------------FIN DE MI FOOTER------------------------------>
 
-  </div>
-  <script src="boostrap/js/bootstrap.min.js"></script>
-  <script src="boostrap/jquery/bootstrap.min.js"></script>
-  <script src="boostrap/jquery/popper.min.js"></script>
-  <script src="javascritp/menu.js"></script>
-  <script src="javascritp/modal.js"></script>
+    </div>
+    <script src="boostrap/js/bootstrap.min.js"></script>
+    <script src="boostrap/jquery/bootstrap.min.js"></script>
+    <script src="boostrap/jquery/popper.min.js"></script>
+    <script src="javascritp/menu.js"></script>
+    <script src="javascritp/modal.js"></script>
 </body>
 
 </html>

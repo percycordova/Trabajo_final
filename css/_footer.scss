@@ -7,6 +7,7 @@
     font-size: 1.6rem;
     font-weight: 400;
 }
+
 .main-footer p {
     padding: 10px;
 }
@@ -25,35 +26,39 @@
     text-align: left;
 }
 
-.main-footer div > div {
+.main-footer div>div {
     margin-top: 20px;
 }
+
 .main-footer div:last-child {
     margin-top: 20px;
 }
+
 iframe {
     margin-top: 3px;
     width: 98%;
-   
 }
+
 .copy {
     text-align: center;
     margin: auto;
 }
+
 #social {
     overflow: hidden;
-
 }
+
 #social a,
 #social p {
     display: block;
     color: #333;
-
     height: 40px;
 }
+
 #social p {
     height: 42px;
 }
+
 #social .overlay {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -91,7 +96,6 @@ iframe {
     top: 1px;
     right: 1px;
     font-size: 40px;
-    
 }
 
 .main-footer [class*="icon-facebook"]:before {

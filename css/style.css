@@ -35,7 +35,7 @@ img {
 }
 
 .contenedor {
-  width: 97%;
+  width: 100%;
   margin: 0px auto;
 }
 
@@ -68,6 +68,8 @@ img {
 .cabecera .cabecera__iconos p {
   color: black;
   margin-top: 5px;
+  text-align: right;
+  margin-right: 15px;
 }
 
 @keyframes desplazamiento {
@@ -159,7 +161,6 @@ header .contactoInfo span {
 }
 .menu .menu__link:hover {
   background: #de423a;
-  transform: scale(1.2);
 }
 .menu .resaltar__menu {
   background: #de423a;
@@ -263,7 +264,6 @@ header .contactoInfo span {
 
 .banner-mensaje p:nth-child(2) {
   width: 70%;
-  font-family: "pacifico", cursive;
   letter-spacing: 1px;
   position: absolute;
   top: 40%;
