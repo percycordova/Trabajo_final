@@ -1,0 +1,138 @@
+h2 {
+    text-align: center;
+    margin-top: 25px !important;
+}
+
+.div-formulario {
+    color: black;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    height: 607px;
+    position: relative;
+    top: 0px !important;
+    transition: all 1s ease-in-out 0.3s;
+}
+
+.div-formulario:before {
+    content: "";
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    background: url(../img/before.png) no-repeat;
+    height: 400px;
+    width: 100%;
+    background-size: 100% !important;
+}
+
+.div-formulario:after {
+    content: "";
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    background: url(../img/after.png) no-repeat;
+    height: 400px;
+    width: 100%;
+    background-size: 100% !important;
+}
+
+.div-formulario.hire:after,
+.div-formulario.hire:before {
+    display: none;
+}
+
+.div-formulario:hover {
+    height: 1250px;
+}
+
+form {
+    background: white;
+    position: absolute;
+    top: 170px;
+    width: 98%;
+    margin-left: -10px;
+    height: 200px;
+    border: 1px solid #f5efef !important;
+    border-right: 3px;
+    overflow: hidden;
+}
+
+form:hover {
+    height: 650px;
+}
+
+.contact-informacion {
+    padding: 5px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    border-right: 1px solid #de423a;
+    margin-right: 20px;
+}
+
+.contact-informacion .column-title {
+    font-family: "Pacifico", cursive;
+    font-weight: 100;
+}
+
+.contact-informacion [class*="icon-"] {
+    font-size: 1.8em;
+    margin-right: 7px;
+    position: relative;
+    top: 5px;
+}
+
+.contact-informacion .red-sociales {
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.contact-informacion .red-sociales [class*="icon-"] {
+    background: black;
+    color: white;
+    margin-left: 0px;
+    margin-right: 15px;
+}
+
+.formulario-label,
+.formulario-input,
+.formulario-txt,
+.formulario-texarea {
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+.formulario-txt {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario-texarea {
+    min-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.formulario-btn {
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+.btn-enviar {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: #de423a;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #de423a;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    width: 140px;
+}
+
+.btn-enviar:hover {
+    background: chocolate;
+}

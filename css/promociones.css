@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/slide/);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 330vh;
+}
+
+.content-all1 {
+    width: 60%;
+    margin: 130;
+    perspective: 800px;
+    position: relative;
+    height: 500px;
+}
+
+.content-carrousel1 {
+    width: 90%;
+    position: absolute;
+    animation: rotar 50s infinite linear;
+    transform-style: preserve-3d;
+    top: 30%;
+    left: 20%;
+}
+
+.content-carrousel1:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.content-carrousel1 figure {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel1 figure:hover {
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel1 figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(300px);
+}
+
+.content-carrousel1 figure:nth-child(2) {
+    transform: rotateY(72deg) translateZ(300px);
+}
+
+.content-carrousel1 figure:nth-child(3) {
+    transform: rotateY(144deg) translateZ(300px);
+}
+
+.content-carrousel1 figure:nth-child(4) {
+    transform: rotateY(216deg) translateZ(300px);
+}
+
+.content-carrousel1 figure:nth-child(5) {
+    transform: rotateY(288deg) translateZ(300px);
+}
+
+.content-carrousel1 figure:nth-child(6) {
+    transform: rotateY(360deg) translateZ(300px);
+}
+
+.content-carrousel1 img {
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+    object-fit: cover;
+    background-size: 100% 100%;
+}
+
+.content-carrousel1 img:hover {
+    transition: all 300ms;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@media (min-width: 660px) {
+    .content-all1 {
+        width: 55%;
+        margin: 130;
+        perspective: 800px;
+        position: relative;
+        height: 500px;
+    }
+    .content-carrousel1 {
+        width: 100%;
+        position: absolute;
+        animation: rotar 50s infinite linear;
+        transform-style: preserve-3d;
+        top: 30%;
+        left: 53%;
+    }
+}
+
+@media (min-width: 760px) {
+    .content-all1 {
+        width: 65%;
+        margin: 130;
+        perspective: 800px;
+        position: relative;
+        height: 500px;
+    }
+    .content-carrousel1 {
+        width: 60%;
+        position: absolute;
+        animation: rotar 50s infinite linear;
+        transform-style: preserve-3d;
+        top: 30%;
+        left: 53%;
+    }
+}
+
+@media (min-width: 1010px) {
+    .content-all1 {
+        width: 50%;
+        margin: 130;
+        perspective: 800px;
+        position: relative;
+        height: 500px;
+    }
+    .content-carrousel1 {
+        width: 50%;
+        position: absolute;
+        animation: rotar 50s infinite linear;
+        transform-style: preserve-3d;
+        top: 30%;
+        left: 63%;
+    }
+}
